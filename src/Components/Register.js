@@ -3,7 +3,7 @@ import './CssComp/style.css';
 export const Register = () => {
 	return (
 		<Fragment>
-			<div className="registerForm">
+			<div className="userForm">
 				<div className="title">
 					<h2>Register</h2>
 				</div>
@@ -12,7 +12,7 @@ export const Register = () => {
 					<input type="text" placeholder="Username" />
 					<input type="email" placeholder="Email" />
 					<input type="password" placeholder="Password" />
-					<button type="submit" className="btnRegister">
+					<button type="submit" className="btn btnRegister">
 						Register
 					</button>
 					<p>
