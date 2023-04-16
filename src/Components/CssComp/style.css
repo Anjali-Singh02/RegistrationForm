@@ -1,15 +1,33 @@
+body {
+	height: 100vh;
+	background-image: linear-gradient(
+		to bottom,
+		#7209b7 3%,
+		#1960a3 50%,
+		#4aaef6 100%
+	);
+}
+
 /* Header comp css */
 .header {
 	margin: 0;
 	display: flex;
 	justify-content: space-between;
-	background-color: black;
+	border-bottom: 5px solid #29267b;
 	align-items: center;
 	color: white;
 }
 .header ul li {
 	list-style: none;
 }
-.btnContainer btn {
-	margin: 10px;
+.btnContainer {
+	display: flex;
+	padding: 5px;
+}
+.btnContainer .btn {
+	margin-right: 10px;
+	padding: 10px 20px;
+	color: #29267b;
+	border: none;
+	border-radius: 20px;
 }
