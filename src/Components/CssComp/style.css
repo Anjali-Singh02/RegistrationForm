@@ -47,10 +47,13 @@ body {
 	align-items: center;
 	width: 35%;
 	height: 60vh;
-	margin-top: 10%;
+	margin-top: 5%;
 	border-radius: 10px;
 	color: white;
 	font-size: large;
+}
+.signInForm {
+	/* display: none; */
 }
 .userForm div {
 	width: 100%;
@@ -99,4 +102,28 @@ body {
 
 .signInForm .btn {
 	margin: 20px 0 50px 0;
+}
+
+/* Footer Component */
+
+footer {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	height: 10vh;
+	position: relative;
+	margin-top: 5%;
+	padding-bottom: 15px;
+	background: #10002b;
+	color: white;
+}
+footer .icons ul {
+	display: flex;
+	/* list-style: none; */
+}
+footer ul li,
+p {
+	list-style: none;
+	padding-left: 10px;
+	margin: 0 0 0 0;
 }

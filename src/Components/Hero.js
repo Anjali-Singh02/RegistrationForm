@@ -8,7 +8,7 @@ export const Hero = () => {
 		<Fragment>
 			<div className="formContainer">
 				<Register />
-				<SignIn />
+				{/* <SignIn /> */}
 			</div>
 		</Fragment>
 	);
