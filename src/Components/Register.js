@@ -1,7 +1,9 @@
-import React, { Fragment, useEffect } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import './CssComp/style.css';
-import { useState } from 'react';
+import { Link  } from 'react-router-dom';
+
 export const Register = () => {
+	 
 	const [user, setUser] = useState({
 		username: '',
 		email: '',
@@ -57,7 +59,7 @@ export const Register = () => {
 						Register
 					</button>
 					<p>
-						Already have an account? <a> Sign in</a>
+						Already have an account? <Link to='/signin'>Sign </Link> 
 					</p>
 				</form>
 			</div>

@@ -17,9 +17,7 @@ body {
 	align-items: center;
 	color: white;
 }
-.header ul li {
-	list-style: none;
-}
+
 .btnContainer {
 	display: flex;
 	padding: 5px;
@@ -30,6 +28,7 @@ body {
 	color: #29267b;
 	border: none;
 	border-radius: 20px;
+	cursor: pointer;
 }
 
 /* Hero section component */
@@ -38,7 +37,9 @@ body {
 	display: flex;
 	justify-content: center;
 }
-
+.formContainer h2 {
+	color: white;
+}
 /* Register component */
 .userForm {
 	background: #240046;
@@ -86,6 +87,7 @@ body {
 	background-color: #4aaef6;
 	border-radius: 5px;
 	width: 100%;
+	cursor: pointer;
 }
 .userForm p {
 	margin-top: 50px;

@@ -1,29 +1,30 @@
-import React, { Fragment, useState } from 'react';
-import { Register } from './Register';
+import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
+
 
 export const Header = () => {
-	const { showComponent, setShowComponent } = useState(false);
-
-	const handleOnClick = () => {
-		setShowComponent(true);
-	};
 	return (
 		<Fragment>
 			<div className="header">
+
 				<ul>
-					<li>Home</li>
+					<Link to='/' style={{color:'white', textDecoration:'none'}}>
+					Home
+					</Link>
 				</ul>
 				<div className="btnContainer">
+					<Link to='/register'>
 					<div>
 						<button
 							className="btn registerBtn"
-							onClick={handleOnClick}
 						>
 							Register
 						</button>
-						{showComponent && <Register />}
 					</div>
+					</Link>
+					<Link to='/signin'>
 					<button className="btn signInBtn">Sign in</button>
+					</Link>
 				</div>
 			</div>
 		</Fragment>

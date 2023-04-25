@@ -1,6 +1,19 @@
-import React, { Fragment } from 'react';
 import './CssComp/style.css';
+import { Fragment, useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
+
 export const SignIn = () => {
+
+
+	const [user, setUser] = useState({
+		username: '',
+		password: '',
+	});
+	useEffect(() => {
+		console.log(user);
+	}, [user]);
+
 	const handleSubmit = (event) => {
 		event.preventDefault();
 	};
@@ -9,6 +22,8 @@ export const SignIn = () => {
 		console.log(id, name, value);
 		setUser((reference) => {});
 	};
+			// navigate('/')
+
 	return (
 		<Fragment>
 			<div className="userForm signInForm">
@@ -20,19 +35,25 @@ export const SignIn = () => {
 					<input
 						type="text"
 						placeholder="Username"
-						onClick={handleChange}
+						id="username"
+						name="username"
+						value={user.username}
+						onChange={handleChange}
 					/>
 					<input
 						type="password"
 						placeholder="Password"
-						onClick={handleChange}
+						id="password"
+						name="password"
+						value={user.password}
+						onChange={handleChange}
 					/>
 					<p>Forgot password?</p>
 					<button type="submit" className="btn btnSignIn">
 						Sign in
 					</button>
 					<p>
-						Do you have an account? <a> Create one</a>
+						Do you have an account? <Link to='/register'><a> Create one</a></Link>
 					</p>
 				</form>
 			</div>
