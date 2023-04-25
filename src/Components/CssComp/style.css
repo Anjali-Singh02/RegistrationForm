@@ -110,18 +110,18 @@ body {
 
 footer {
 	display: flex;
-	align-items: center;
 	flex-direction: column;
 	height: 10vh;
-	position: relative;
-	margin-top: 5%;
+	width: 100vw;
+	top: 88vh;
+	position: absolute;
+	align-items: center;
 	padding-bottom: 15px;
 	background: #10002b;
 	color: white;
 }
 footer .icons ul {
 	display: flex;
-	/* list-style: none; */
 }
 footer ul li,
 p {
