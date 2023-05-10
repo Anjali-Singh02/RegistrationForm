@@ -1,11 +1,11 @@
 body {
 	height: 100vh;
-	background-image: linear-gradient(
+	/* background-image: linear-gradient(
 		to bottom,
 		#7209b7 3%,
 		#1960a3 50%,
 		#4aaef6 100%
-	);
+	); */
 }
 
 /* Header comp css */
@@ -13,9 +13,10 @@ body {
 	margin: 0;
 	display: flex;
 	justify-content: space-between;
-	border-bottom: 5px solid #29267b;
+	border-bottom: 2px solid #29267b;
+	box-shadow: #10002b;
 	align-items: center;
-	color: white;
+	color: #10002b;
 }
 
 .btnContainer {
